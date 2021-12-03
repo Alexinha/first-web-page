@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--head and body, two sections of the boilerplate-->
+  <meta charset="utf-8">
+  <!--search meta and see lots of other attributes such as 'description' and so on -->
+  <title>💜 Alexinha's Personal Site</title>
+  <!--definition of title-->
+</head>
+
+<body>
+  <center>
+    <table>
+      <!--I put the pics into table cells so that they can be centred (finally!)-->
+      <td><img src="lana-del-rey-at-grammy.jpeg" alt="Lana Del Rey"></td>
+      <td><img src="lana-del-rey-at-grammy.jpeg" alt="Lana Del Rey"></td>
+      <td><img src="lana-del-rey-at-grammy.jpeg" alt="Lana Del Rey"></td>
+      <td><img src="lana-del-rey-at-grammy.jpeg" alt="Lana Del Rey"></td>
+      <td><img src="lana-del-rey-at-grammy.jpeg" alt="Lana Del Rey"></td>
+    </table>
+  </center>
+  <!--
+  <img src="lana-del-rey-at-grammy.jpeg" alt="Lana Del Rey">: the source tag can be followed by either the URL from the webiste
+  or simply by name of the pic file when it's in the same folder as the index.html.
+  if you want to make another folder just for the images, see example below.
+  the good thing about using pic from a local folder is that you can modifiy the pic's size and everything first.
+  And webiste referred to could be shut down in the future.
+  the "alt" is used to leave keywords for google to search ur pic.-->
+
+  <!--this is how path works the same: <img src="images\blue banisters.jpeg" alt="blue banisters">
+  but mind that the image folder should be at the same layer with html file.
+  Also the pics are placed next to each other from left to right, instead of vertically.-->
+
+  <center>
+    <!--be ware that there should be spaces in the beginning to show this is the child of the bigger section
+    or simply use atom beautify to reorganize the layout-->
+    <h1>Alexinha's Personal Site</h1>
+    <br />
+    <h2>A Site for Aesthetics and Melancholy</h2>
+    <br>
+    <p>
+      <!--p for pharagraph. compare <em> and <i>, as well as <strong> and <b>,
+      when in both cases the former suggests structural meanings yet the latter is more for 'style',
+      refer to documentation if needed -->
+      <em>Photographer, traveller, and <strong>the First Lady-wannabe</strong></em>
+    </p>
+    <p>
+      Alexinha is blessed with a curious mind and exceptional talents on multipule subjects. <br>
+      She likes sun bathing, cooking and mopping the floor when she needs to relax.<br>
+      She also likes coffee, but she thinks Americano tastes like chinese herb medicine.
+    </p>
+    <!--when switch to a new paragraph we use another pair of <p>,
+      if using <br />, there won't be space between two paragraphs obv.-->
+    <hr />
+    <!--so apparently here you can type a self-closing tag by either type 'hr' + return and it will show up as how it is,
+      or type '<' and then 'hr', which will give you a hr with a '/',
+      the difference seems to be the one with a slash will be compatible with XHTML as well, so it's portable.-->
+    <h3>🎬 Favourate Films</h3>
+    <p>
+      <em><a href="https://movie.douban.com/subject/1292784/">Fanny and Alexander</a><br>
+        <a href="https://movie.douban.com/subject/1293071/">Wild Strawberries</a><br>
+        <a href="https://movie.douban.com/subject/1361252/">La Notte</a></em>
+      <!--a stands for anchor tag, h stands for hyperlink, and it's not a self-closing tag,
+      between the start tag and the end tag, there's the text for the link.-->
+    </p>
+    <h3>⛷ Hobbies</h3>
+    <p>
+      Playlist making <br>
+      Film Appreciating <br>
+      Creative writing
+    </p>
+    <!--reason why not using bullet points: Unfortunately although the text has been centred, the bullet points still show up on the far left.
+      If I want to align them together I might need to use CSS so leave this to later.
+      Also, a centred list looks much more weird than regular paragraph with breaks like 'films' above-->
+
+    <h3>🎧 Playlists</h3>
+    <table cellspacing="20">
+      <!--you write tables row by row, and divide each row by table cells aka table data aka "td"-->
+      <thead>
+        <!--table is divided into "table head" and "table body"-->
+        <td>Days of the Week</td>
+        <td>Songs</td>
+        <td>Artists</td>
+        <td>Ratings</td>
+      </thead>
+
+      <tbody>
+        <!--table, table head/body, table row, table data(cell)...like so-->
+        <tr>
+          <td>Monday</td>
+          <td>Honeymoon</td>
+          <td>Lana Del Rey</td>
+          <td>⭐ ⭐ ⭐ ⭐ ⭐</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Assume Form</td>
+          <td>James Blake</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Ginger</td>
+          <td>BROCKHAMPTON</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3><a href="contact me.html">Contact Me</a></h3>
+    <!--add a hyperlink to an internal site we created, mind the path-->
+  </center>
+</body>
+
+</html>

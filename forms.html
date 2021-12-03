@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ask Me Anything</title>
+</head>
+
+<body>
+  <form class="" action="mailto:171222190@qq.com" method="post" enctype="text/plain">
+    <!--action means where the "submit" will transfer your to, or all the infos down there to.-->
+    <!--lable is what shows on the webpage as "label" or descriptions for the later interaction.
+    and input hosts anything leads to interaction.-->
+    <!--add an "enctype" attribute here so that the informations below will be organized as plain text
+    (without funny symbols) when they are transfered as a post.
+    and they'll be automatically sorted according to the "name" attributes down below.-->
+    <label for="name">Entre your name: </label>
+    <input type="text" name="name" value="">
+    <br><br>
+    <label for="gender">Select your gender: </label>
+    <label for="gender">Male</label>
+    <input type="checkbox" name="gender" value="Male">
+    <label for="gender">Female</label>
+    <input type="checkbox" name="gender" value="Female">
+    <br><br>
+    <label for="e-mail">Your E-mail address: </label>
+    <!--refer to MDN for more input attributes-->
+    <input type="email" name="e-mail" value="@gmail.com">
+    <br><br>
+    <label for="questions">Ask me anything: </label>
+    <br><br>
+    <textarea name="questions" rows="8" cols="80"></textarea>
+    <br>
+    <!--value= whatever will show in the box as instruction I guess-->
+    <input type="submit" name="name" value="submit">
+  </form>
+</body>
+
+</html>
